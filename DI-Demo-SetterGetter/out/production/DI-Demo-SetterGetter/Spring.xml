@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="BCoach1" class="com.ConstructorInjection.BaseballCoach">
+        <constructor-arg name="ifortune" ref="fortune"/>
+        <constructor-arg name="name" value="Deepanshu"/>
+        <constructor-arg name="email" value="gdeepanshu2013@gmail.com"/>
+        <constructor-arg name="teamName" value="--"/>
+        <constructor-arg name="address" ref="Address"/>
+    </bean>
+
+    <bean id="BCoach2" class="com.ConstructorInjection.BaseballCoach">
+        <constructor-arg name="ifortune" ref="fortune"/>
+        <constructor-arg name="name" value="Bhavuk"/>
+        <constructor-arg name="email" value="bhavukvirmani00@gmail.com"/>
+        <constructor-arg name="teamName" value="--"/>
+        <constructor-arg name="address" ref="Address"/>
+    </bean>
+
+    <bean id="Address" class="com.ConstructorInjection.Address">
+        <constructor-arg index="0" value="A-1/141"/>
+        <constructor-arg index="1" value="fgdfg"/>
+        <constructor-arg index="2" value="gfgdfg"/>
+        <constructor-arg index="3" value="fgdfgdf"/>
+    </bean>
+
+    <bean id="fortune" class="com.ConstructorInjection.Fortune"></bean>
+</beans>
