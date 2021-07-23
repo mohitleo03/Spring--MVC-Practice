@@ -1,0 +1,6 @@
+#
+#Sun May 09 13:32:08 IST 2021
+org.example.Fortune=org.springframework.stereotype.Component
+org.example.BaseballCoach=org.springframework.stereotype.Component
+org.example.CricketCoach=org.springframework.stereotype.Component
+org.example.TennisCoach=org.springframework.stereotype.Component
